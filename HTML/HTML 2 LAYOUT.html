@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORM</title>
+<style>            
+        #Layout_table{width:100%;height:100%;
+        border: 6px double black;}
+        #LAYOUT_h4{padding: auto;}
+        div td{font-style:italic;font-size:15px;}
+        div input,.LAYOUT_GENDER{border-radius: 5px 5px;
+        background-color: rgb(207, 180, 146);}
+        .LAYOUT_type,.LAYOUT_GENDER{position:absolute;right:20%;}
+        div span{color: red;}.LAYOUT_type{font-size:inherit;}                                              
+        .LAYOUT_type:hover,.LAYOUT_GENDER:hover{box-shadow: 3px 3px rgb(34, 33, 30);}
+        #LAYOUT_submit{color:rgb(255, 252, 249) ;  }
+           input[type=submit]{background-color: saddlebrown;width: 60%;padding:  10px;}
+           input,.LAYOUT_GENDER{padding:5px;
+            width:50%;}
+    </style>
+    <script>
+        function myfunction(){
+        window.alert("Please fillout this field ")
+        }
+    </script>
+    
+</head>
+<body bgcolor="LightGray"> <form>
+  <center> <div id="LAYOUT_input" class="">
+<table bgcolor="cornsilk" id="Layout_table">
+   <tbody><tr> <td><h4 id="LAYOUT_h4" class=""><span class="req">*</span> denotes a mandatory feilds</h4><hr></td></tr>
+<tr><td>FIRST NAME:<span>*</span><input type="text" class="LAYOUT_type" id="" required="">
+    <br><br></td></tr>
+<tr><td>LAST NAME:<input type="text" class="LAYOUT_type" required="">
+    <span>*</span><br><br></td></tr>
+<tr><td>FATHER NAME:<input type="text" class="LAYOUT_type" required="">
+    <span>*</span><br><br></td></tr> 
+<tr><td>D.O.B:<input type="date" class="LAYOUT_type" required="">
+    <span>*</span><br><br></td></tr>    
+<tr><td>TEL:<input type="tel" class="LAYOUT_type" maxlength="10" required="">
+    <span>*</span><br><br></td></tr>
+<tr><td>H.S.C:<input type="text" class="LAYOUT_type" required="">
+    <span>*</span><br><br></td></tr>
+<tr><td>PERMANENT <br> ADDRESS:<input type="text" class="LAYOUT_type" required="">
+    <span>*</span><br><br></td></tr>
+<tr><td>E-MAIL:<input type="email" class="LAYOUT_type" required="">
+    <span>*</span><br><br></td></tr>
+<tr><td>U.G DEGREE:<input type="text" class="LAYOUT_type" required="">
+    <span>*</span><br><br></td></tr>  
+<tr><td>GENDER<select class="LAYOUT_GENDER"><option>MALE</option>
+<option>FEMALE</option>
+<option>OTHER</option></select>
+    <span>*</span><br><br></td></tr>
+</tbody></form>
+<tfoot><tr><td><br><br><br><b><center>
+<input type="submit" value="Register" id="LAYOUT_submit" onclick="javascript:myfunction()"></center></b><br><br><br></td></tr></tfoot>    
+</table></div></center>
+
+
+
+</body></html>
