@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!---->   <script src="script_1/problem_1.js"></script> 
+        <script src="script_1/problem_2.js"></script>
+        <script src="script_1/problem_3.js"></script>
+        <script src="script_1/problem_4.js"></script>
+        <script src="script_1/problem_5.js"></script>
+        
+<style>
+    p{
+        margin-left: 10%;
+      /* color: #f50202;*/
+    }
+    span{
+        color:rgb(16, 170, 16)
+    }
+    
+</style>
+
+</head>
+<body>
+    <h1>Working With variables and constants:</h1>
+    <div> <!--QUS_1-->
+        <h3>1. Declare two variables:admin and name.</h3>
+        <p>Assign the value "john" to fname.</p>
+        <p>copy the value from fname to admin.</p>
+        <p>show the value of admin using alert (must output"john").</p>
+        <span><ins>sol:</ins></span>
+        <pre>
+            let admin={
+                fname:String(prompt("Enter your name")),
+                age:18
+            }
+            let name =
+             admin.fname 
+            
+            alert("1."+ name)
+            
+            
+            console.log(admin.fname)
+            console.log(admin.age)
+            console.log(name)
+        </pre>
+        
+ </div>
+ <!--Qus_2-->
+ <div id="Qus_2">
+     <h3>2.Create for color in web (hexadecimal) formate.</h3>
+     <span><ins>sol:</ins></span>
+     <pre>
+        console.log("QUS 2")
+        //op defines the opacity
+        const red =["#f50202","#f5020277"]
+        console.log(red[0])
+        console.log(red[1])
+     </pre>
+
+ </div>
+ <!--QUS_3-->
+ <div>
+     <h3>3. Write a program,using the variables declarations above,that displays the data 
+         types for each variable.
+     </h3>
+     <span><ins>sol:</ins></span>
+     <pre>
+        let a=5         
+        let b="hello"   
+        let c=5>8       
+        let d=["number","string",'boolean']  
+        let e={1:a,2:b}              
+
+        console.log(a +"    "+typeof  a)                <span>number</span>  
+        console.log(b +"    "+typeof b)                 <span>string</span>
+        console.log(c +"    "+typeof c)                 <span>true or false</span>
+        console.log(d +"    "+typeof d)                 <span>Array</span>
+        console.log(e)                                  <span>object</span>
+        console.log(e+" " +e[4] +" "+typeof e)</pre>    
+ </div>
+ <!--QUS_4-->
+
+  <h3>4.What will be the result for these expression ?</h3>
+  <span><ins>sol:</ins></span>
+       <pre>                              
+           5>4                     <span>true</span> 
+          "apple">"pineapple"      <span>false</span>
+          "2">"12"                 <span>true</span>    
+          undefined ==null         <span>true</span>
+          undefied ===null         <span>false</span> 
+          null == "\n0\n"          <span>false</span>
+          null ===+"\n0\n"         <span>false</span>
+
+
+       </pre>
+ <!--QUS_5-->
+ <h3>5.Create web page that asks for the name and output it.</h3>
+ <pre>
+
+    let result="Hello "+name
+    alert("5."+result)
+    console.log(result)
+    </pre>
+ <span><ins>sol:</ins></span>
+
+<p id="Qus_5"></p>
+ <script>
+     document.getElementById("Qus_5").innerHTML=result
+ </script>
+
+</body>
+</html>
