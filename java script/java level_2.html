@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS level_2</title>
+    <script src="script level_2/js-II-1.js" async></script>
+    <script src="script level_2/js-II-2.js" async></script>
+    <script src="script level_2/js-II-3.js" async></script>
+    <script src="script level_2/js-II-4.js" async></script>
+    <script src="script level_2/js-II-5.js" async></script>
+    <script src="script level_2/js-II-6.js" async></script>
+
+<style>
+    p{
+        margin-left: 10%;
+      
+    }
+    span{
+        color:rgb(16, 170, 16)
+    }
+    #js-II-1{
+        font-size:2vmax
+    }
+</style>
+</head>
+<body>
+    <h1 class="col-1">JavaScript Basics - Problems on Functions/Conditional/Looping Statements
+    </h1>
+    <h3>Working with loops and conditional statements:</h3>
+    <h4>1. Write a loop which prompts for a number greater than 100. If the visitor enters another
+        number-ask them to input again.</h4>
+        <p>The loop must ask for a number until either the visitor enters a number greater than
+            100 or cancels the input/enters an empty line.
+            Here we can assume that the visitor only inputs numbers. There"s no need to
+            implement a special handling for a non-numeric input in this task.</p>
+            <span><ins>sol:</ins></span>
+<pre>
+    let num
+do{
+num= prompt("Enter the number")
+console.log(num>=100)
+if(num>=100)
+{
+alert("Enter  the valid number")
+}
+}
+ while (num>=100)</pre>
+<p >The  number is <ins><span id="js-II-1"></span></ins>,Lesser than 100.</p>
+
+<h4>2. Using if..else, write the code which gets a number via prompt and then shows in alert:</h4>
+<p>1, if the value is greater than zero,</p>
+<p>-1, if less than zero,</p>
+<p> 0, if equals zero.</p>
+<p>In this task we assume that the input is always a number.</p>
+<span><ins>sol:</ins></span>
+<pre> 
+if(num>0)
+{
+    alert( num+" is greater than zero")
+}else if(0>num){
+    alert(num+" is lesser than zero")
+}
+
+else if(num===0)
+{
+    alert(num +" is equal to zero")
+}
+else{
+    alert("string not allowed")
+    
+}
+</pre>
+
+<h4>3. Write a function min(a,b) which returns the least of two numbers a and b.</h4>
+  <p>  For instance:
+    min(2, 5) == 2 <br>
+    min(3, -1) == -1 <br>
+    min(1, 1) == 1</p>
+    
+    <span><ins>sol:</ins></span>
+    <pre>
+console.log("Js.-II-3")
+
+let min=(a,b)=>{
+    if(a>b){
+    return b +" B is a minimum value"}
+    else if(a==b){
+        return a +" A equal to  B"
+    }
+    else{
+        return a +" A is a minimum value"
+    }
+}
+let x=Number(prompt("Enter the A value"))
+let y=Number(prompt("Enter the B value"))
+
+console.log("Value of A: "+ x)
+console.log("Value of B: "+y)
+console.log(min(x,y))
+alert(min(x,y))
+
+    </pre>
+    <h4>4. Write the code using if..else which would correspond to the following switch:</h4>
+    <p>switch (browser) { <br>
+        case 'Edge': <br>
+        alert( "You've got the Edge!" ); <br>
+        break; <br>
+        case 'Chrome': <br>
+        case 'Firefox': <br>
+        case 'Safari': <br>
+        case 'Opera': <br>
+        alert( 'Okay we support these browsers too' ); <br>
+        break; <br>
+        default: <br>
+        alert( 'We hope that this page looks ok!' );
+        }</p>
+        <span><ins>sol:</ins></span>
+        <pre>
+console.log("Js.-II-4")
+
+let browser="Edge"
+let user=String(prompt("Enter the browser name"))
+if(browser==user){
+    alert("You got the Edge")
+}
+else if(("Chrome"==user)||("Firefox"==user)||("Safari"==user)||("Opera"==user)){
+    alert("Okay we support this browser too.")
+}
+else{
+    alert("We hope that this page looks ok!")
+}
+console.log(("Chrome"==user)||("Firefox"==user)||("Safari"==user)||("Opera"==user))
+        </pre>
+
+        <h4>5. Rewrite the code below using a single switch statement:</h4>
+        <span><ins>sol:</ins></span>
+        <pre>
+console.log("Js.-II-5")
+
+let a,b
+
+do{
+     a= prompt("Enter value less than 4")
+     b=Number(a)
+     switch(b){
+        case 0:
+            alert("0")
+            console.log(a+" The value is equal to Zero")
+        break;
+        case 1:
+            alert("1")
+            console.log(a+" The value is equal to One")
+        break;
+        case 2:
+        case 3:
+            alert("2,3")
+            console.log(a+" The value is equal to 2 and 3")
+            break;
+    }}
+while((a>=4))
+        </pre>
+        <h4>6. Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by 
+            itself n times and returns the result.</h4>
+            <p>pow(3, 2) = 3 * 3 = 9 <br>
+                pow(3, 3) = 3 * 3 * 3 = 27 <br>
+                pow(1, 100) = 1 * 1 * ...* 1 = 1 <br>
+                Create a web-page that prompts for x and n, and then shows the result of pow(x,n).</p>
+            <span><ins>sol:</ins></span>
+            <pre>
+let x=Number( prompt("Enter the x "))
+let n=Number(prompt("Enter the n "))
+
+let pow=(x,n)=>{
+x=x
+n=n
+    return Math.pow(x,n);
+
+}
+
+let power= pow(x,n)
+console.log(power)
+            </pre>
+           
+            <div id="pow"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-level-III</title>
+    <script src="script level_3/JS-III-1.js" async></script>
+    
+    <style>
+        .btn{
+            width: 30%;
+        }
+       .car{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+        }
+        .car button,.create{
+            padding: 10px;
+            border-radius: 30%;
+            font-weight: bolder;
+            background-color: aquamarine;
+            border: 2px solid  black;
+            color:brown;
+}
+        .car button:focus{
+            background-color: bisque;
+
+        }
+        p{
+        margin-left: 10%;
+      
+    }
+    span{
+        color:rgb(16, 170, 16)
+    }
+    </style>
+</head>
+<body>
+    <h2>
+        JavaScript Basics - Problems on Classes
+    </h2>
+<h3>1. Define a car object using plain literal object. <br>
+    define 2 properties (brand, speed) and 3 methods (accelerate, brake, describe)
+    </h3>
+<br>
+    <h3>2. Redefine the previous problem statement with classes and add the given attributes and 
+        methods.</h3>
+<span><ins>sol:</ins></span>
+    <h3 id="count"></h3>
+<div class="btn">
+
+<div class="car">
+
+<button onclick="Car1.Speed()">Accelerate</button>
+<button onclick="Car1.brake()">Brake</button>
+<button onclick="Car1.Stop()">Stop</button>
+<button onclick="Car1.Status()">Status</button>
+
+</div><br>
+<button onclick="create()" class="create">Create</button>
+
+</div>
+
+</body>
+</html>
